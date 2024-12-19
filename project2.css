@@ -1,0 +1,73 @@
+body {
+  background-color: lightslategray;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  background-color: blue;
+  padding: 10px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.paginacontent {
+  margin: 20px;
+}
+
+#saldoDisplay {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+ul#transaction-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul#transaction-list li {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+#rekeningTable {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+#rekeningTable th, #rekeningTable td {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+}
+
+#rekeningTable th {
+  background-color: darkblue;
+  color: white;
+}
+
+#saldoSortering {
+  margin: 10px;
+  padding: 5px;
+}

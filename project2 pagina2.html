@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekeningen en Transacties</title>
+    <link rel="stylesheet" href="project2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="project2.html">Home</a></li>
+                <li><a href="project2 pagina2.html">Rekeningen</a></li>
+                <li><a href="project 2 pagina 3.html">Overschrijvingen</a></li>
+                <li><button id="logout">Uitloggen</button></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Rekeningen en Transacties</h1>
+
+    <!-- Rekening Selectie -->
+    <h2>Rekening Beheren</h2>
+    <div>
+        <label for="rekeningSelect">Kies een rekening:</label>
+        <select id="rekeningSelect"></select>
+    </div>
+    <div>
+        <p>Saldo: <span id="saldoDisplay">€0.00</span></p>
+    </div>
+
+    <!-- Transacties -->
+    <h2>Transacties</h2>
+    <ul id="transaction-list"></ul>
+
+    <!-- Bedrag invoer -->
+    <div>
+        <label for="bedragInput">Bedrag:</label>
+        <input type="number" id="bedragInput" step="0.01" min="0" />
+        <button id="toevoegen">Toevoegen</button>
+        <button id="afnemen">Afnemen</button>
+    </div>
+
+    <!-- Overschrijving -->
+    <div>
+        <label for="naarRekeningSelect">Naar rekening:</label>
+        <select id="naarRekeningSelect"></select>
+        <label for="overschrijvingBedrag">Overschrijf bedrag:</label>
+        <input type="number" id="overschrijvingBedrag" step="0.01" min="0" />
+        <button id="overschrijven">Overschrijven</button>
+    </div>
+
+    <!-- Rekening Tabel -->
+    <h2>Rekeningen Tabel</h2>
+    <div>
+        <label for="saldoSortering">Sorteer op saldo:</label>
+        <select id="saldoSortering">
+            <option value="hoogste">Hoogste eerst</option>
+            <option value="laagste">Laagste eerst</option>
+        </select>
+    </div>
+    <table id="rekeningTable">
+        <thead>
+            <tr>
+                <th>Rekening Naam</th>
+                <th>Saldo</th>
+                <th>Laatste 3 Transacties</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <button id="nieuweRekening">Nieuwe Rekening</button>
+
+    <script src="Project2.js"></script>
+</body>
+</html>
